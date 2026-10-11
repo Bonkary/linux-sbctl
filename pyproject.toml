@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linux-sbctl"
+version = "0.1.0"
+description = "An unecessary Linux sbctl Python library"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "Bonkary", email = "bonkary.github@gmail.com"}
+]
+dependencies = [
+    "numpy"
+]
+keywords = [
+    "sbctl", "secure", 
+    "boot", "linux"
+]
+
+[project.optional-dependencies]
+pyside6 = ["PySide6"]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
