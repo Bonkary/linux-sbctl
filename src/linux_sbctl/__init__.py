@@ -1,3 +1,3 @@
 from . import pyside
-
-__all__ = ['pyside']
+from . import sbctl
+__all__ = ['pyside', 'sbctl']
